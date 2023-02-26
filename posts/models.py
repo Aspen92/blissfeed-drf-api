@@ -6,14 +6,6 @@ class Post(models.Model):
     """
     Post model, related to 'owner'.
     """
-    image_filter_choices = [
-        ('funny', 'Funny'),
-        ('awesome', 'Awesome'),
-        ('inspiration', 'Inspiration'),
-        ('health', 'Health'),
-        ('beautiful', 'Beautiful'),
-        ('amazing', 'Amazing'),
-    ]
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -21,10 +13,10 @@ class Post(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/', default='../post_default_cut8cb', blank=True)
-
-    image_filter = models.CharField(
-        max_length=32, choices=image_filter_choices, default='normal'
+    category = models.ForeignKey(
+        Category, on_delete=models.CASCADE, blank=True, null=True
     )
+
 
     class Meta:
         ordering = ['-created_at']
