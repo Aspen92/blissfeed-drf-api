@@ -17,7 +17,6 @@ class Post(models.Model):
         Category, on_delete=models.CASCADE, blank=True, null=True
     )
 
-
     class Meta:
         ordering = ['-created_at']
 

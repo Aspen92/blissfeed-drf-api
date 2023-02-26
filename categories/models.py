@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     category = models.CharField(max_length=60)
     created_at = models.DateTimeField(auto_now=True)
