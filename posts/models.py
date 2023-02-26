@@ -14,12 +14,12 @@ class Post(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/', default='../post_default_cut8cb', blank=True)
-    # image_filter_choices = [
-    #     ('2023', '2023'),
-    # ]
-    # image_filter = models.CharField(
-    #     max_length=12, choices=image_filter_choices, default='normal'
-    # )
+    image_filter_choices = [
+        ('2023', '2023'),
+    ]
+    image_filter = models.CharField(
+        max_length=12, choices=image_filter_choices, default='normal'
+    )
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE, blank=True, null=True
     )
