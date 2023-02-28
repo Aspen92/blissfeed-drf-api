@@ -1,14 +1,29 @@
-# BlissFeed DRF - [Live link]()
+# BlissFeed API (Django REST Framework) - [Live link](https://blissfeed-drf.herokuapp.com/)
+
+Welcome to BlissFeed API, powered by Django REST Framework! This API is designed to provide seamless communication between the frontend social media web app called BlissFeed and it's backend server. With full CRUD functionality.
 
 # Data Model
 
+The backend API application is built with [Django REST framework](https://www.django-rest-framework.org/).
+
 ## ERD
+- TEST
+***
+## User model
+- TEST
+***
+## Post model
+- TEST
+***
+## Category model
+- TEST
+***
 
-### User model
-
-### Post model
 
 ## Database
+
+- PostgreSQL is used in production to store all data.
+- Database is hosted on [ElephantSQL](https://www.elephantsql.com/).
 
 # User Stories
 
