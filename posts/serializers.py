@@ -44,6 +44,6 @@ class PostSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'category', 'created_at', 'updated_at',
-            'title', 'content', 'image', 'like_id', 'likes_count', 'image_filter',
+            'title', 'content', 'image', 'like_id', 'likes_count',
             'comments_count',
         ]
