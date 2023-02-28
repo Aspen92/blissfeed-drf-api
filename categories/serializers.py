@@ -3,6 +3,9 @@ from categories.models import Category
 
 
 class CategorySerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Category model
+    """
     name = serializers.CharField(source='category', read_only=True)
 
     class Meta:
