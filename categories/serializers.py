@@ -10,4 +10,4 @@ class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ['name', 'created_at', 'updated_at']
+        fields = ['name', 'id', 'created_at', 'updated_at']
