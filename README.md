@@ -199,16 +199,14 @@ PyJWT for encode and decode JSON Web Tokens.
 17. To run your app locally, enter this command in your terminal:
         python manage.py runserver
 
-## Development
-
-## **Production**
-
 # Credits
 
 ## Code
 
-## Content
-
-## Media
+- This API was built using Django REST Framework. The source code is from Code Institute's Django REST API walkthrough project [GitHub](https://github.com/Code-Institute-Solutions/drf-api). I decided to use the base of whole project on this API since it was a great fit for the application I had planned and it provides a great foundation to expand upon.
 
 ## Acknowledgements
+
+- My best friend Lucas Holm for helping me solve some problems that i stumbled upon during this project.
+- [Code Institute](https://codeinstitute.net/) tutors (Sean & Oisin) for help with various issues.
+- [Stack Overflow](https://stackoverflow.com/) for tips, tricks and solutions to fix difficult errors.
