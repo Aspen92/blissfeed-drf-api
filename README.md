@@ -2,9 +2,6 @@
 
 Welcome to BlissFeed API, powered by Django REST Framework! This API is designed to provide seamless communication between the frontend social media web app called BlissFeed and it's backend server. With full CRUD functionality.
 
-
-![alt text](../blissfeed-drf-api/images/Screenshot%202023-03-01%20at%2001.24.52.png "")
-
 # Data Model
 
 The backend API application is built with [Django REST framework](https://www.django-rest-framework.org/).
