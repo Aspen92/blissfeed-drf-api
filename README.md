@@ -87,14 +87,29 @@ is used for image processing and validation.
 
 ### Psycopg2
 - [psycopg2](https://www.psycopg.org/docs/)
-
+is used for PostgreSQL Python adaption.
 
 ### PostgreSQL
-[PostgreSQL](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+is used for the production database.
 
 # Testing
 
+## Pep8
+- PEP8 shows no errors, some errors were found in the settings.py - no need to fix.
+
 ## Manual testing of user stories
+
+- As an admin, I want to have full CRUD(create, edit, delete) functionality for all the users, posts, comments and likes, so that I can for example delete malicious content from the page.
+
+| Test       | Action            | Expected Result               | Pass |
+| ---------- | ---------------- | --------------------------- | ---- |
+| Users     | Create, edit, delete   | A user can be created, edited or deleted.   | ✓    |
+| Users     | Update permissions  | The user permissions can be updated.      | ✓    |
+| Profiles   | Create, edit, delete | A profile can be created, edited or deleted.  | ✓    |
+| Posts  | Create, edit, delete       | A post can be created, edited or deleted.        | ✓    |
+| Comments   | Create, edit, delete | A comment can be created, edited or deleted.   | ✓    |
+| Likes   | Create, edit, delete | A like can be created, edited or deleted.   | ✓    |
 
 ## Bugs
 
