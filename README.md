@@ -10,13 +10,18 @@ The backend API application is built with [Django REST framework](https://www.dj
 - TEST
 ***
 ## User model
-- TEST
+- User id is linked via OneToOne relation in the Profile Model owner field.
+- User id is linked via ForeignKey relation in the Post Model owner field.
+- User id is linked via ForeignKey relation in the Follower Model owner field.
+- User id is linked via ForeignKey relation in the Follower Model followed field.
+- User id is linked via ForeignKey relation in the Comment Model owner field.
+- User id is linked via ForeignKey relation in the Like Model owner field.
 ***
 ## Post model
-- TEST
+- Post id is linked via ForeignKey relation in the Comment Model post field.
 ***
 ## Category model
-- TEST
+- Category id is linked via a ForeignKey relation in the Post Model category field.
 ***
 
 
